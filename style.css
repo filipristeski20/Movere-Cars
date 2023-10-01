@@ -1,0 +1,146 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    background-color:#F6F4F4;
+}
+
+.navigationbarline{
+    border-bottom: 2px solid black;
+}
+
+.wrapper{
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.header .languages a .usa{
+    width: 5em;
+    height: 3.7em;
+    margin-right: 4.5em;
+}
+
+.navigationlist{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 9.7em;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationlist li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.navigationlist li a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    border-radius: 5px;
+    background: #FF7517;
+    bottom: -8px;
+    left: 0px;
+    opacity: 0;
+    transition: all 0.4s;
+
+}
+
+.navigationlist li a:hover:after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    border-radius: 5px;
+    background: #FF7517;
+    bottom: -8px;
+    left: 0px;
+    opacity: 100%;
+
+}
+
+.wrapper_landing_section{
+    display: flex;
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.left_column h1{
+    font-size: 7em;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 12rem;
+    margin-bottom: 0;
+}
+
+.left_column h1 .perfect{
+    color: #FF7517;
+}
+
+.left_column .landing_section_description{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 0.2rem;
+}
+
+.left_column .landing_section_button{
+    margin: 0;
+    margin-top: 5.5rem;
+    width: 278px;
+    height: 40px;
+    border-radius: 0.5rem;
+    border: 2px solid #FF7517;
+    background: #F6F4F4;
+    font-size: 1.8em;
+    font-weight: 600;
+    transition: all 0.3s;
+    padding: 0;
+}
+
+.left_column .landing_section_button:hover{
+    margin: 0;
+    margin-top: 5.5rem;
+    width: 278px;
+    height: 40px;
+    border-radius: 0.5rem;
+    border: 2px solid #FF7517;
+    background: #FF7517;
+    color: white;
+    font-size: 1.8em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+
+
+.wrapper_landing_section .right_column .porsche{
+    margin-top: 20rem;
+    margin-left: 6.4rem;
+    width: 61rem;
+}
