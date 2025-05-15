@@ -1,61 +1,62 @@
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     margin: 0;
     font-family: 'Poppins';
-    background-color:#008000;
+    background: linear-gradient(135deg, #121212, #1a1a1a);
+    color: white;
 }
 
-.navigationbarline{
-    border-bottom: 2px solid black;
+.navigationbarline {
+    border-bottom: 2px solid #333;
 }
 
-.wrapper{
+.wrapper {
     max-width: 110rem;
     margin: 0 auto;
+    padding: 2rem;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header .logo{
+.header .logo {
     font-size: 2.5rem;
     text-decoration: none;
-    color: black;
+    color: #FF7517;
     font-weight: 700;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.header .languages a .usa{
+.header .languages a .usa {
     width: 5em;
     height: 3.7em;
     margin-right: 4.5em;
 }
 
-.navigationlist{
+.navigationlist {
     display: flex;
-    text-decoration: none;
     list-style-type: none;
     gap: 9.7em;
     margin: 0;
     padding: 0;
 }
 
-.navigationlist li a{
+.navigationlist li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.8rem;
     font-weight: 600;
     position: relative;
 }
 
-.navigationlist li a::after{
+.navigationlist li a::after {
     content: '';
     position: absolute;
     width: 0%;
@@ -66,29 +67,21 @@ body{
     left: 0px;
     opacity: 0;
     transition: all 0.4s;
-
 }
 
-.navigationlist li a:hover:after{
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 5px;
-    border-radius: 5px;
-    background: #FF7517;
-    bottom: -8px;
-    left: 0px;
-    opacity: 100%;
-
+.navigationlist li a:hover:after {
+    width: 100%;
+    opacity: 1;
 }
 
-.wrapper_landing_section{
+.wrapper_landing_section {
     display: flex;
     width: 120rem;
     margin: 0 auto;
+    padding-top: 5rem;
 }
 
-.left_column h1{
+.left_column h1 {
     font-size: 7em;
     text-transform: uppercase;
     font-weight: 800;
@@ -96,51 +89,45 @@ body{
     margin-bottom: 0;
 }
 
-.left_column h1 .perfect{
+.left_column h1 .perfect {
     color: #FF7517;
 }
 
-.left_column .landing_section_description{
+.left_column .landing_section_description {
     font-size: 2rem;
     font-weight: 600;
-    margin: 0;
     margin-top: 0.2rem;
+    color: #ccc;
 }
 
-.left_column .landing_section_button{
-    margin: 0;
+.left_column .landing_section_button {
     margin-top: 5.5rem;
     width: 278px;
-    height: 40px;
-    border-radius: 0.5rem;
+    height: 45px;
+    border-radius: 0.7rem;
     border: 2px solid #FF7517;
-    background: #F6F4F4;
+    background: #1f1f1f;
+    color: #FF7517;
     font-size: 1.8em;
     font-weight: 600;
     transition: all 0.3s;
-    padding: 0;
+    box-shadow: 0px 4px 10px rgba(255, 117, 23, 0.2);
 }
 
-.left_column .landing_section_button:hover{
-    margin: 0;
-    margin-top: 5.5rem;
-    width: 278px;
-    height: 40px;
-    border-radius: 0.5rem;
-    border: 2px solid #FF7517;
+.left_column .landing_section_button:hover {
     background: #FF7517;
     color: white;
-    font-size: 1.8em;
-    font-weight: 600;
     cursor: pointer;
+    box-shadow: 0px 6px 15px rgba(255, 117, 23, 0.4);
 }
 
-
-
-
-
-.wrapper_landing_section .right_column .porsche{
+.wrapper_landing_section .right_column .porsche {
     margin-top: 20rem;
     margin-left: 6.4rem;
     width: 61rem;
+    transition: transform 0.4s ease;
+}
+
+.wrapper_landing_section .right_column .porsche:hover {
+    transform: scale(1.03);
 }
