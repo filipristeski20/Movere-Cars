@@ -100,6 +100,13 @@ body {
     color: #ccc;
 }
 
+.left_column h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #bbb;
+    max-width: 55rem;
+}
+
 .left_column .landing_section_button {
     margin-top: 5.5rem;
     width: 278px;
@@ -130,4 +137,74 @@ body {
 
 .wrapper_landing_section .right_column .porsche:hover {
     transform: scale(1.03);
+}
+
+.source_form {
+    margin-top: 10rem;
+    background: #1f1f1f;
+    padding: 4rem;
+    border-radius: 1rem;
+    border: 1px solid #333;
+}
+
+.source_form h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #FF7517;
+}
+
+.source_form p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    color: #ccc;
+}
+
+.source_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form_group {
+    display: flex;
+    gap: 2rem;
+}
+
+.form_group input,
+.source_form textarea {
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.5rem;
+    border-radius: 0.6rem;
+    border: 1px solid #444;
+    background: #121212;
+    color: white;
+}
+
+.source_form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.form_group input::placeholder,
+.source_form textarea::placeholder {
+    color: #888;
+}
+
+.form_button {
+    width: 200px;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 0.6rem;
+    border: 2px solid #FF7517;
+    background: transparent;
+    color: #FF7517;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.form_button:hover {
+    background: #FF7517;
+    color: white;
 }
