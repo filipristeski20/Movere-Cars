@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MOVER CARS INC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="navigationbarline">
-        <div class="wrapper">
-            <div class="header">
-                <a href="#" class="logo">MOVER CARS INC</a>
-                <div class="navigation">
-                    <ul class="navigationlist">
-                        <li><a href="#" class="home">HOME</a></li>
-                        <li><a href="#">SOURCE YOUR CAR</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                    </ul>
-                </div>
-                <div class="languages">
-                    <a href="#"><img src="/images/United States of America (US).svg" alt="USA language" class="usa"></a>
-                    <a href="#"><img src="/images/nl.svg" alt="Netherlands language"></a>
-                </div>
+
+<div class="navigationbarline">
+    <div class="wrapper">
+        <div class="header">
+            <a href="#" class="logo">MOVER CARS INC</a>
+            <div class="navigation">
+                <ul class="navigationlist">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SOURCE YOUR CAR</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="languages">
+                <a href="#"><img src="/images/United States of America (US).svg" class="usa"></a>
+                <a href="#"><img src="/images/nl.svg"></a>
             </div>
         </div>
     </div>
+</div>
 
-
-    <div class="wrapper_landing_section">
-        <div class="left_column">
-            <h1>Your <span class="perfect"> Perfect</span> <br> Car Awaits</h1>
-            <h3 class="landing_section_description">Find your ideal car with our customized <br> sourcing service,
-                tailored
-                to your preferences.</h3>
-            <h3>Description</h3>
-            <h4>Movere Cars is a newly launched premium car showroom specializing in high-end vehicles, including luxury sedans, top-tier sports cars, and elite SUVs.
-We bring together the world’s most prestigious automotive brands under one roof, offering a refined experience for enthusiasts and buyers seeking performance, style, and exclusivity.</h4>
-            <button class="landing_section_button">SOURCE YOUR CAR NOW</button>
-        </div>
-        <div class="right_column">
-            <img src="/images/image 1.png" alt="Porsche Taycan" class="porsche">
-        </div>
+<div class="wrapper_landing_section">
+    <div class="left_column">
+        <h1>Your <span class="perfect">Perfect</span><br>Car Awaits</h1>
+        <h3 class="landing_section_description">
+            Find your ideal car with our customized<br>
+            sourcing service, tailored to your preferences.
+        </h3>
+        <h4>
+            Movere Cars is a newly launched premium car showroom specializing in high-end vehicles, including luxury sedans,
+            top-tier sports cars, and elite SUVs. We bring together the world’s most prestigious automotive brands under one roof,
+            offering a refined experience for enthusiasts and buyers seeking performance, style, and exclusivity.
+        </h4>
+        <button class="landing_section_button">SOURCE YOUR CAR NOW</button>
     </div>
+    <div class="right_column">
+        <img src="/images/image 1.png" class="porsche">
+    </div>
+</div>
 
+<div class="wrapper">
+    <div class="source_form">
+        <h2>Source Your Car</h2>
+        <p>Tell us what you’re looking for and our team will contact you.</p>
+        <form>
+            <div class="form_group">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="Preferred Brand">
+                <input type="text" placeholder="Model">
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="Budget Range">
+                <input type="tel" placeholder="Phone Number">
+            </div>
+            <textarea placeholder="Additional Notes"></textarea>
+            <button type="submit" class="form_button">Submit Request</button>
+        </form>
+    </div>
+</div>
 
 </body>
-
 </html>
